@@ -8,6 +8,7 @@
         <li><%= ingredient.name %></li>
         <% end %>
       </ul>
+      <%= link_to "Add a Dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
     </div>
   </div>
 </div>
