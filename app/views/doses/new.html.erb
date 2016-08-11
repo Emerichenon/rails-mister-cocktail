@@ -4,7 +4,7 @@
       <h2>Add a Dose in the <%= @cocktail.name %></h2>
       <%= simple_form_for([@cocktail, @dose]) do |f| %>
         <%= f.input :description %>
-        <%= f.input :ingredient %>
+        <%= f.association :ingredient, prompt: "Choose an ingredient" %>
         <%= f.button :submit, class: "btn btn-danger" %>
       <% end %>
     </div>
