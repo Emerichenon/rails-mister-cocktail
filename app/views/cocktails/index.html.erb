@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-offset-3">
+      <h2>List of Cocktails</h2>
+      <ul>
+        <% @cocktails.each do |cocktail| %>
+        <li>
+          <%= cocktail.name %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
