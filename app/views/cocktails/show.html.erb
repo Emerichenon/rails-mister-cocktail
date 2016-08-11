@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-offset-4">
+      <h2><%= @cocktail.name %></h2>
+      <h3>List of the ingredients</h3>
+      <ul>
+        <% @cocktail.ingredients.each do |ingredient| %>
+        <li><%= ingredient.name %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
