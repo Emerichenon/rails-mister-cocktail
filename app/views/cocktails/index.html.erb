@@ -14,20 +14,25 @@
             <div class="card-img">
               <%= cl_image_tag cocktail.photo.path, height: 250, width: 300, crop: :fit %>
             </div>
-            <div class="card-link">
+            <div class="card-details">
               <%= link_to cocktail.name, cocktail_path(cocktail) %>
             </div>
           </div>
         </div>
       <% end %>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="card">
-          <div class="card-img">
+        <%= link_to new_cocktail_path, class: "card-link" do %>
+          <div class="card" id="card-add">
+            <div class="card-img">
+              <%= image_tag "noun_581919_cc.png" %>
+            </div>
+            <div class="card-details">
+              <p>Add a new cocktail</p>
+            </div>
           </div>
-          <div class="card-link">
-            <%= link_to "Add a cocktail", new_cocktail_path, class: "btn" %>
-          </div>
-        </div>
+        <% end %>
       </div>
   </div>
 </div>
+
+<%= link_to "Add a cocktail", new_cocktail_path, class: "btn" %>
