@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div class="container text-center" id="header">
   <div class="row">
     <div class="col-xs-12">
       <div class="padded">
@@ -20,13 +20,14 @@
           </div>
         </div>
       <% end %>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="padded">
-        <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <div class="card-img">
+          </div>
+          <div class="card-link">
+            <%= link_to "Add a cocktail", new_cocktail_path, class: "btn" %>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
 </div>
